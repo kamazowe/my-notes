@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { PlaygroundComponent } from './playground/playground.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { PlaygroundViewComponent } from 'src/app/playground/playground-view/playground-view.component';
+import { PlaygroundRoutingModule } from 'src/app/playground/playground-routing.module';
 
 
 @NgModule({
-  declarations: [PlaygroundComponent],
+  declarations: [PlaygroundViewComponent],
   imports: [
-    SharedModule
+    SharedModule,
+    PlaygroundRoutingModule
   ],
 })
 export class PlaygroundModule {

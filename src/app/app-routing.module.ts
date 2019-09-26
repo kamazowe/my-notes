@@ -6,6 +6,11 @@ import { NotFoundComponent } from 'src/app/core/components/not-found/not-found.c
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'notes',
+    pathMatch: 'full'
+  },
+  {
     path: 'login',
     component: LoginComponent
   },
