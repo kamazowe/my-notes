@@ -16,11 +16,11 @@ const routes: Routes = [
   },
   {
     path: 'notes',
-    loadChildren: './notes/notes.module#NotesModule'
+    loadChildren: () => import('./notes/notes.module').then(m => m.NotesModule)
   },
   {
     path: 'playground',
-    loadChildren: './playground/playground.module#PlaygroundModule'
+    loadChildren: () => import('./playground/playground.module').then(m => m.PlaygroundModule)
   },
   {
     path: '**',
