@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+                <label for="">Username</label>
+                <input type="text" class="form-control" [(ngModel)]="username">
+                <label for="">Password</label>
+                <input type="password" class="form-control" [(ngModel)]="password">
+                <button 
+                    class="btn btn-success"
+                    [disabled]="!username || !password"
+                    routerLink="/notes">confirm</button>
+        </div>
+    </div>
+</div>

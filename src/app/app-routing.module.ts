@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from 'src/app/core/components/login/login.component';
 import { NotFoundComponent } from 'src/app/core/components/not-found/not-found.component';
+import { LoginFieldComponent } from './login-field/login-field.component';
 
 
 const routes: Routes = [
