@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-notes-item
+            *ngFor="let notesEl of notes"
+            [note]="notesEl"></app-notes-item>
+        </div>
+    </div>
+</div>
