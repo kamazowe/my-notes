@@ -6,7 +6,6 @@ import { NotesService } from '../notes.service';
   selector: 'app-notes-item',
   templateUrl: './notes-item.component.html',
   styleUrls: ['./notes-item.component.scss'],
-  providers: [NotesService]
 })
 export class NotesItemComponent implements OnInit {
   @Input() note: Note;
