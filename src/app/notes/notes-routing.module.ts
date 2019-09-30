@@ -10,10 +10,6 @@ const routes: Routes = [
     path: '',
     component: NotesViewComponent
   },
-  {
-    path: 'note',
-    component: NotesDetailComponent
-  },
 ];
 
 @NgModule({

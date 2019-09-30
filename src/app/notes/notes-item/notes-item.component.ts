@@ -15,7 +15,8 @@ export class NotesItemComponent implements OnInit {
   ngOnInit() {
   }
 
+
   onSelected() {
-    this.notesService.noteSelected.emit(this.note);
+    this.notesService.selectNote(this.note);
   }
 }
