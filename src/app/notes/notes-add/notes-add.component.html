@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form>
+                <div class="row">
+                    <div class="col-md-5 form-group">
+                        <label for="name">Title</label>
+                        <input 
+                            type="text"
+                            id="title"
+                            class="form-control"
+                            #titleInput>
+                    </div>
+                    <div class="col-md-7 form-group">
+                        <label for="desc">Description</label>
+                        <input 
+                            type="text"
+                            id="desc"
+                            class="form-control"
+                            #descInput>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="content">Content</label>
+                        <input 
+                            type="text"
+                            id="content"
+                            class="form-control"
+                            #contentInput>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="imgPath">Image Path</label>
+                        <input 
+                            type="text"
+                            id="imgPath"
+                            class="form-control"
+                            #imgPathInput>
+                    </div>
+                </div>
+            </form>
+            <button class="btn btn-success"
+                    (click)="onAddNote()">Add</button>
+        </div>
+    </div>
+</div>

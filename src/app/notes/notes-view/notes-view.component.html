@@ -1,13 +1,15 @@
-<div class="row">
-    <div class="col-md-5">
-        <app-notes-list></app-notes-list>
-    </div>
-    <div class="col-md-7">
-        <app-notes-detail 
-            *ngIf="selectedNote; else infoText"
-            [note]="selectedNote"></app-notes-detail>
-            <ng-template #infoText>
-                <p>Select Note</p>
-            </ng-template>
-    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <app-notes-list></app-notes-list>
+        </div>
+        <div class="col-md-7">
+            <app-notes-detail 
+                *ngIf="selectedNote; else infoText"
+                [note]="selectedNote"></app-notes-detail>
+                <ng-template #infoText>
+                    <p>Select Note</p>
+                </ng-template>
+        </div>
+    </div>    
 </div>

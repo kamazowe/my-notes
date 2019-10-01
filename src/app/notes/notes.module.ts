@@ -5,6 +5,7 @@ import { NotesRoutingModule } from 'src/app/notes/notes-routing.module';
 import { NotesDetailComponent } from './notes-detail/notes-detail.component';
 import { NotesItemComponent } from './notes-item/notes-item.component';
 import { NotesListComponent } from './notes-list/notes-list.component';
+import { NotesAddComponent } from './notes-add/notes-add.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { NotesListComponent } from './notes-list/notes-list.component';
     NotesListComponent,
     NotesDetailComponent,
     NotesItemComponent,
+    NotesAddComponent,
   ],
   imports: [
     SharedModule,
