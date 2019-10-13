@@ -6,7 +6,6 @@ import { NotesService } from '../notes.service';
   selector: 'app-notes-list',
   templateUrl: './notes-list.component.html',
   styleUrls: ['./notes-list.component.scss'],
-  providers: [NotesService]
 })
 export class NotesListComponent implements OnInit {
   notes: Note[];

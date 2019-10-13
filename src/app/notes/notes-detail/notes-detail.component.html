@@ -1,0 +1,17 @@
+<div class="row" *ngIf="note.imagePath">
+    <div class="col-12">
+        <img 
+            [src]="note.imagePath" 
+            [alt]="note.name"
+            class="img-responsive"
+            style="max-height: 300px;">
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2>{{ note.title }}</h2>
+        <p> {{ note.data }} </p>
+        <p> {{ note.description }} </p>
+        <p> {{ note.content }} </p>
+    </div>
+</div>

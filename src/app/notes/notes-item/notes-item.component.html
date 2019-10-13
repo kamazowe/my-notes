@@ -1,16 +1,15 @@
-<a href="#"
-    class="list-group-item clearfix d-flex justify-content-between margin-y"
+<a  
+    class="list-group-item d-flex justify-content-between align-items-center note__item"
     (click)="onSelected()">
     <div class="">
         <h4 class="list-group-item-heading">{{ note.title }}</h4>
         <p class="list-group-item-text">{{ note.description }}</p>
     </div>
-    <span 
-        *ngIf="note.imagePath">
-            <img 
-                [src]="note.imagePath" 
-                [alt]="note.title"
-                class="img-responsive"
-                style="max-height: 50px;">
+    <span *ngIf="note.imagePath">
+        <img 
+            [src]="note.imagePath" 
+            [alt]="note.title"
+            class="img-responsive"
+            style="max-height: 50px;">
     </span>
 </a>
