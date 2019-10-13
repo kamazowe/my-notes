@@ -23,6 +23,14 @@ const routes: Routes = [
     loadChildren: () => import('./playground/playground.module').then(m => m.PlaygroundModule)
   },
   {
+    path: 'courses',
+    loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule)
+  },
+  {
+    path: 'form-visibility',
+    loadChildren: () => import('./form-visibility/form-visibility.module').then(m => m.FormVisibilityModule)
+  },
+  {
     path: '**',
     component: NotFoundComponent
   },

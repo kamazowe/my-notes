@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
@@ -89,6 +90,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -120,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-notes"
+    }
+  },
+  "defaultProject": "my-notes",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
