@@ -1,0 +1,11 @@
+<app-header></app-header>
+<button [routerLink]="'playground'">playground</button>
+<button [routerLink]="'login'">login</button>
+<button [routerLink]="'notes'">notes</button>
+<button [routerLink]="'courses'">courses</button>
+<button [routerLink]="'form-visibility'">form visibility</button>
+
+<div>{{testApiMessage$ | async | json}}</div>
+
+
+<router-outlet></router-outlet>
