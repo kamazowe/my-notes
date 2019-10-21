@@ -1,16 +1,6 @@
-# NOTES APP
+# Notes App -  Nx Angular Nest NGRX Data
+* run frontend
+```npm run start:client```
 
-## start frontned with test backend server
-```
-npm run start
-```
-## start mock backend
-```
-npm run server
-```
-
-
-## TODO
-- RELATIONSHIP ENTITIES IN NGRX DATA
-- SIMPLE AUTH
- 
+* run backend 
+``` npm run start:api```
